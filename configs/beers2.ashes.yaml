@@ -96,7 +96,7 @@ global_config:
         # generated from.
         # TODO: this needs to be set to a fasta of the genome you generate data for,
         #       if generating SAM/BAM files (default)
-        reference_genome_fasta: ./data/HomoSapiens_GRCh38_Ensemblv99/HomoSapiens_GRCh38_Ensemblv99.oneline_seqs.fa
+        reference_genome_fasta: ../../data/HomoSapiens_GRCh38_Ensemblv99/HomoSapiens_GRCh38_Ensemblv99.oneline_seqs.fa
 
 library_prep_pipeline:
     # The library prep pipeline takes input molecules and walks them through a library prep
@@ -147,7 +147,7 @@ library_prep_pipeline:
 
                 # Directory containing CAMPAREE output for the sample
                 # This data is used to generate the resulting molecules
-                sample_data_directory: ./output/run_1/CAMPAREE/data/sample1/
+                sample_data_directory: ../../output/run_1/CAMPAREE/data/sample1/
             # '2':
             #     num_molecules_per_packet: 10000
             #     num_packets: 1
