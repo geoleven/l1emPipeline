@@ -9,7 +9,7 @@ setup:
     # Alpha-numeric ID (including underscores) assigned to the CAMPAREE run.
     # Used to name output directories. If specified on command line with the
     # "-r" argument, it will override the value here.
-    run_id: 2
+    run_id: 1
 
     # [OPTIONAL] Integer value used to see random number generator used in
     # various CAMPAREE steps. Used for reproducibility.
@@ -74,7 +74,7 @@ resources:
     # file can be built from a GTF using the bin/format_reference_files_for_camparee.py
     # script. Chromosome names in this file must match those used in the reference
     # genome FASTA.
-    annotation_filename: HomoSapiens_hg38.annotation.mixed.txt
+    annotation_filename: HomoSapiens_hg38.annotation.ashes.txt
 
     # File containing a list of chromosome names and the number of homologous
     # copies for each gender in the species. Chromosome names must match those
