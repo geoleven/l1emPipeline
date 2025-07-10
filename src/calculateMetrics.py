@@ -115,11 +115,13 @@ def main(method:str="EM", metrics:List[str]=["r2", "mae", "mdae", "rmse", "mape"
     parser.add_argument('-o', help='Output file path with filename')
     parser.add_argument('-otemp', required=False, help='output merged df')
     parser.add_argument('-plot_tpm', action='store_true', required=False, help='plot TPM distribution')
-    parser.add_argument('-truth', action='store_true', required=False, help='argument for plotting either true values or expected')
+    parser.add_argument('-truth', action='store_true', required=False, help='Argument for plotting either true values or expected')
+    parser.add_argument('-method', required="false", help='Input the method used for these results (EB/VB)')
     args = parser.parse_args()
     # Get metrics after caclulating TPM
     pd_pred_tpm = calcTPM_L1EM(args.il)
     pd_true_tpm = calcTPM_truth(args.ic)
+    method = args.method
     array_true, array_pred = org_values(pd_true_tpm, pd_pred_tpm, args.otemp, pos_only=False)
     scores ={}
     scores[method]={}
